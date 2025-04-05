@@ -1,0 +1,68 @@
+package Trie;
+
+public class WordBreakPrblm {
+    static class Node {
+        Node children[] = new Node[26];
+        boolean eow = false;
+
+        public Node() {
+            for (int i = 0; i < 26; i++) {
+                children[i] = null;
+            }
+        }
+    }
+
+    public static Node root = new Node();
+
+    // Insert -> O(L)
+    public static void insert(String word) {
+        Node curr = root;
+        for (int level = 0; level < word.length(); level++) {
+            int idx = word.charAt(level) - 'a';
+            if (curr.children[idx] == null) {
+                curr.children[idx] = new Node();
+            }
+            curr = curr.children[idx];
+        }
+        curr.eow = true;
+    }
+
+    // Search ->  O(L)
+    public static boolean search(String key) {
+        Node curr = root;
+        for (int level = 0; level < key.length(); level++) {
+            int idx = key.charAt(level) - 'a';
+            if (curr.children[idx] == null) {
+                return false;
+            }
+            curr = curr.children[idx];
+        }
+        return curr.eow == true;
+    }
+
+    // WordBreak ->
+    public static boolean wordBreak(String key) { // O(L)
+        if (key.length() == 0) { // Base case
+            return true;
+        }
+        for (int i = 1; i <= key.length(); i++) {
+            // substring(beg idx, last idx exclusive -> so 0, 0 is invalid cond)
+            if (search(key.substring(0, i)) // 1st substring
+                    && wordBreak(key.substring(i))) // 2nd substring
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        String arr[] = { "i", "like", "sam", "samsung", "mobile", "ice" };
+        for (int i = 0; i < arr.length; i++) {
+            insert(arr[i]);
+        }
+        String key = "ilikesamsung";
+        System.out.println(wordBreak(key));
+
+    }
+}
