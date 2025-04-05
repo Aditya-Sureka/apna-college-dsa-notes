@@ -24,53 +24,50 @@ This repository contains my personal notes and solutions from the Apna College D
 
 2)Folder Structure: Provide a high-level overview:
 
-├── ArrayList/         # Programs and problems based on Java ArrayList
+├── ArrayList/       
+├── Arrays/           
 
-├── Arrays/            # DSA problems involving arrays and their operations
+├── Assignment/       
 
-├── Assignment/        # Miscellaneous problem-solving assignments
+├── Backtracking/     
 
-├── Backtracking/      # Recursive backtracking solutions (e.g., N-Queens, Sudoku)
+├── Basics/            
 
-├── Basics/            # Java basics and introductory programs
+├── BinaryTree/      
 
-├── BinaryTree/        # Binary tree creation, traversal, and manipulation
+├── BitManipulation/   
 
-├── BitManipulation/   # Bitwise operations and optimization tricks
+├── BST/               
+├── Divide&Conquer/    
+├── DP/                
 
-├── BST/               # Binary Search Tree implementation and problems
+├── Graphs/            
 
-├── Divide&Conquer/    # DnC paradigm problems (e.g., merge sort, quick sort)
+├── Greedy/           
 
-├── DP/                # Dynamic Programming problems and tabulation/memoization
+├── Hashing/           
 
-├── Graphs/            # Graph data structures and traversal (BFS, DFS)
+├── Heaps/            
 
-├── Greedy/            # Greedy approach-based problem solving
+├── LinkedList/        
 
-├── Hashing/           # HashMaps, HashSets, and their DSA applications
+├── OOPS/              
 
-├── Heaps/             # Min-Heap and Max-Heap based solutions
+├── Patterns/          
 
-├── LinkedList/        # Singly & doubly linked lists, cycle detection, reversal
+├── Queues/            
 
-├── OOPS/              # Object Oriented Programming concepts in Java
+├── Recursion/         
 
-├── Patterns/          # Star/number pattern printing programs
+├── Segment/  
 
-├── Queues/            # Queue and Deque implementations (array/linked)
+├── Sorting/   
 
-├── Recursion/         # Recursive algorithms and problem solutions
+├── Stacks/            
 
-├── Segment/           # Segment trees and range query-related problems
+├── Strings/          
 
-├── Sorting/           # Implementation of classic sorting algorithms
-
-├── Stacks/            # Stack-based problems (infix to postfix, stock span)
-
-├── Strings/           # String manipulation, pattern matching
-
-├── Trie/              # Trie data structure for prefix-based searching
+├── Trie/            
 
 3) How to Use:
 
